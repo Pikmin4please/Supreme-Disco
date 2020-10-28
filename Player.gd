@@ -1,14 +1,11 @@
 extends Area2D
 
-var speed = 100
+export (int) var speed = 100
+export (int) var jump_speed = 50 
 
+var velocity = Vector2.ZERO
 
-func _physics_process(delta):
-	if Input.is_action_pressed("ui_right"):
-		move(speed,delta)
-	if Input.is_action_pressed("ui_left"):
-		move(-speed, delta)
-
-
-func move(xspeed,delta):
-	position.x += xspeed * delta
+func get_input():
+	var input = velocity
+	if Input.is_action_just_pressed("ui_right"):
+		input.x = 
