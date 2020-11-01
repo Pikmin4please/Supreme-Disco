@@ -7,12 +7,17 @@
 extents = Vector2( 28.4097, 29.7533 )
 
 [node name="Player" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Collision" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
