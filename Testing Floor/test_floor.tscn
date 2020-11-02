@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Testing_Floor.png" type="Texture" id=1]
+[ext_resource path="res://Testing Floor/Testing_Floor.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
 
 [node name="test_floor" type="StaticBody2D"]
-collision_mask = 0
+collision_layer = 2
+collision_mask = 28
 __meta__ = {
 "_edit_group_": true
 }
