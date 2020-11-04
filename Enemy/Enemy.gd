@@ -7,6 +7,9 @@ export (int) var EnemySpeed = 3;
 var velocity = Vector2.ZERO;
 var dir = true;
 
+#Getting access to the player
+onready var Player = load("res://Player/Player.tscn")
+
 # This function sets the defualt velocity of the enemy.
 func _ready():
 	velocity = Vector2(EnemySpeed,0);
@@ -37,3 +40,14 @@ func _physics_process(delta):
 		# Thus if it the wall layer, it is surely a wall.
 		if(collider_type == 1):
 			ChangeDir(); # Change direction due to contact with a wall.
+
+
+
+func _on_HurtBox_area_entered(area):
+	queue_free()
+
+
+
+
+func _on_HitBox_body_entered(Player):
+	Player.hit()
