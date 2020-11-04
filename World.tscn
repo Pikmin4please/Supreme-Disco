@@ -9,7 +9,11 @@
 [node name="World" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+<<<<<<< Updated upstream
 position = Vector2( 120, 16 )
+=======
+position = Vector2( 24, 32 )
+>>>>>>> Stashed changes
 
 [node name="RemoteTransform2D" parent="Player" index="2"]
 remote_path = NodePath("../../Camera")
@@ -32,6 +36,9 @@ position = Vector2( 120, 160 )
 [node name="test_floor7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 536, 160 )
 
+[node name="test_floor12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 536, 96 )
+
 [node name="test_floor8" parent="." instance=ExtResource( 2 )]
 position = Vector2( 472, 160 )
 
@@ -45,7 +52,11 @@ position = Vector2( 344, 160 )
 position = Vector2( 280, 160 )
 
 [node name="Camera" type="Camera2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2( 120, 16 )
+=======
+position = Vector2( 24, 32 )
+>>>>>>> Stashed changes
 current = true
 limit_smoothed = true
 drag_margin_h_enabled = true
@@ -59,6 +70,10 @@ position = Vector2( 688, 72 )
 position = Vector2( -128, 72 )
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
+<<<<<<< Updated upstream
 position = Vector2( 520, 96 )
+=======
+position = Vector2( 248, 96 )
+>>>>>>> Stashed changes
 
 [editable path="Player"]
